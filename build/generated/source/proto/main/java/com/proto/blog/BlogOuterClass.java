@@ -78,28 +78,30 @@ public final class BlogOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017blog/blog.proto\022\004blog\"E\n\004Blog\022\n\n\002id\030\001 " +
-      "\001(\t\022\021\n\tauthor_id\030\002 \001(\t\022\r\n\005title\030\003 \001(\t\022\017\n" +
-      "\007content\030\004 \001(\t\"-\n\021CreateBlogRequest\022\030\n\004b" +
-      "log\030\001 \001(\0132\n.blog.Blog\".\n\022CreateBlogRespo" +
-      "nse\022\030\n\004blog\030\001 \001(\0132\n.blog.Blog\"\"\n\017ReadBlo" +
-      "gRequest\022\017\n\007blog_id\030\001 \001(\t\",\n\020ReadBlogRes" +
-      "ponse\022\030\n\004blog\030\001 \001(\0132\n.blog.Blog\"-\n\021Updat" +
-      "eBlogRequest\022\030\n\004blog\030\001 \001(\0132\n.blog.Blog\"." +
-      "\n\022UpdateBlogResponse\022\030\n\004blog\030\001 \001(\0132\n.blo" +
-      "g.Blog\"$\n\021DeleteBlogRequest\022\017\n\007blog_id\030\001" +
-      " \001(\t\"%\n\022DeleteBlogResponse\022\017\n\007blog_id\030\001 " +
-      "\001(\t\"\021\n\017ListBlogRequest\",\n\020ListBlogRespon" +
-      "se\022\030\n\004blog\030\001 \001(\0132\n.blog.Blog2\322\002\n\013BlogSer" +
-      "vice\022A\n\nCreateBlog\022\027.blog.CreateBlogRequ" +
-      "est\032\030.blog.CreateBlogResponse\"\000\022;\n\010ReadB" +
-      "log\022\025.blog.ReadBlogRequest\032\026.blog.ReadBl" +
-      "ogResponse\"\000\022A\n\nUpdateBlog\022\027.blog.Update" +
-      "BlogRequest\032\030.blog.UpdateBlogResponse\"\000\022" +
-      "A\n\nDeleteBlog\022\027.blog.DeleteBlogRequest\032\030" +
-      ".blog.DeleteBlogResponse\"\000\022=\n\010ListBlog\022\025" +
-      ".blog.ListBlogRequest\032\026.blog.ListBlogRes" +
-      "ponse\"\0000\001B\022\n\016com.proto.blogP\001b\006proto3"
+      "\n\017blog/blog.proto\022\004blog\032\034google/api/anno" +
+      "tations.proto\"E\n\004Blog\022\n\n\002id\030\001 \001(\t\022\021\n\taut" +
+      "hor_id\030\002 \001(\t\022\r\n\005title\030\003 \001(\t\022\017\n\007content\030\004" +
+      " \001(\t\"-\n\021CreateBlogRequest\022\030\n\004blog\030\001 \001(\0132" +
+      "\n.blog.Blog\".\n\022CreateBlogResponse\022\030\n\004blo" +
+      "g\030\001 \001(\0132\n.blog.Blog\"\"\n\017ReadBlogRequest\022\017" +
+      "\n\007blog_id\030\001 \001(\t\",\n\020ReadBlogResponse\022\030\n\004b" +
+      "log\030\001 \001(\0132\n.blog.Blog\"-\n\021UpdateBlogReque" +
+      "st\022\030\n\004blog\030\001 \001(\0132\n.blog.Blog\".\n\022UpdateBl" +
+      "ogResponse\022\030\n\004blog\030\001 \001(\0132\n.blog.Blog\"$\n\021" +
+      "DeleteBlogRequest\022\017\n\007blog_id\030\001 \001(\t\"%\n\022De" +
+      "leteBlogResponse\022\017\n\007blog_id\030\001 \001(\t\"\021\n\017Lis" +
+      "tBlogRequest\",\n\020ListBlogResponse\022\030\n\004blog" +
+      "\030\001 \001(\0132\n.blog.Blog2\370\002\n\013BlogService\022A\n\nCr" +
+      "eateBlog\022\027.blog.CreateBlogRequest\032\030.blog" +
+      ".CreateBlogResponse\"\000\022N\n\010ReadBlog\022\025.blog" +
+      ".ReadBlogRequest\032\026.blog.ReadBlogResponse" +
+      "\"\023\202\323\344\223\002\r\022\013/blog/blogs\022A\n\nUpdateBlog\022\027.bl" +
+      "og.UpdateBlogRequest\032\030.blog.UpdateBlogRe" +
+      "sponse\"\000\022A\n\nDeleteBlog\022\027.blog.DeleteBlog" +
+      "Request\032\030.blog.DeleteBlogResponse\"\000\022P\n\010L" +
+      "istBlog\022\025.blog.ListBlogRequest\032\026.blog.Li" +
+      "stBlogResponse\"\023\202\323\344\223\002\r\022\013/blog/blogs0\001B\022\n" +
+      "\016com.proto.blogP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -112,6 +114,7 @@ public final class BlogOuterClass {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.google.api.AnnotationsProto.getDescriptor(),
         }, assigner);
     internal_static_blog_Blog_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -179,6 +182,12 @@ public final class BlogOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_blog_ListBlogResponse_descriptor,
         new java.lang.String[] { "Blog", });
+    com.google.protobuf.ExtensionRegistry registry =
+        com.google.protobuf.ExtensionRegistry.newInstance();
+    registry.add(com.google.api.AnnotationsProto.http);
+    com.google.protobuf.Descriptors.FileDescriptor
+        .internalUpdateFileDescriptor(descriptor, registry);
+    com.google.api.AnnotationsProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

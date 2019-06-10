@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package blog;
 
+import "google/api/annotations.proto";
+
 option java_package = "com.proto.blog";
 option java_multiple_files = true;
 
@@ -56,7 +58,11 @@ service BlogService {
     rpc CreateBlog(CreateBlogRequest) returns (CreateBlogResponse){};
 
     // returns NOT_FOUND if not found
-    rpc ReadBlog(ReadBlogRequest) returns (ReadBlogResponse){};
+    rpc ReadBlog(ReadBlogRequest) returns (ReadBlogResponse){
+        option (google.api.http) = {
+            get: "/blog/blogs"
+        };
+    };
 
     // returns NOT_FOUND if not found or UNKNOWN if update failed
     rpc UpdateBlog(UpdateBlogRequest) returns (UpdateBlogResponse){};
@@ -64,5 +70,9 @@ service BlogService {
     // returns NOT_FOUND if not found or UNKNOWN if delete failed
     rpc DeleteBlog(DeleteBlogRequest) returns (DeleteBlogResponse){};
 
-    rpc ListBlog(ListBlogRequest) returns (stream ListBlogResponse){};
+    rpc ListBlog(ListBlogRequest) returns (stream ListBlogResponse){
+        option (google.api.http) = {
+            get: "/blog/blogs"
+        };
+    };
 }
