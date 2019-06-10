@@ -58,11 +58,7 @@ service BlogService {
     rpc CreateBlog(CreateBlogRequest) returns (CreateBlogResponse){};
 
     // returns NOT_FOUND if not found
-    rpc ReadBlog(ReadBlogRequest) returns (ReadBlogResponse){
-        option (google.api.http) = {
-            get: "/blog/blogs"
-        };
-    };
+    rpc ReadBlog(ReadBlogRequest) returns (ReadBlogResponse){};
 
     // returns NOT_FOUND if not found or UNKNOWN if update failed
     rpc UpdateBlog(UpdateBlogRequest) returns (UpdateBlogResponse){};

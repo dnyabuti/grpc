@@ -91,17 +91,17 @@ public final class BlogOuterClass {
       "DeleteBlogRequest\022\017\n\007blog_id\030\001 \001(\t\"%\n\022De" +
       "leteBlogResponse\022\017\n\007blog_id\030\001 \001(\t\"\021\n\017Lis" +
       "tBlogRequest\",\n\020ListBlogResponse\022\030\n\004blog" +
-      "\030\001 \001(\0132\n.blog.Blog2\370\002\n\013BlogService\022A\n\nCr" +
+      "\030\001 \001(\0132\n.blog.Blog2\345\002\n\013BlogService\022A\n\nCr" +
       "eateBlog\022\027.blog.CreateBlogRequest\032\030.blog" +
-      ".CreateBlogResponse\"\000\022N\n\010ReadBlog\022\025.blog" +
+      ".CreateBlogResponse\"\000\022;\n\010ReadBlog\022\025.blog" +
       ".ReadBlogRequest\032\026.blog.ReadBlogResponse" +
-      "\"\023\202\323\344\223\002\r\022\013/blog/blogs\022A\n\nUpdateBlog\022\027.bl" +
-      "og.UpdateBlogRequest\032\030.blog.UpdateBlogRe" +
-      "sponse\"\000\022A\n\nDeleteBlog\022\027.blog.DeleteBlog" +
-      "Request\032\030.blog.DeleteBlogResponse\"\000\022P\n\010L" +
-      "istBlog\022\025.blog.ListBlogRequest\032\026.blog.Li" +
-      "stBlogResponse\"\023\202\323\344\223\002\r\022\013/blog/blogs0\001B\022\n" +
-      "\016com.proto.blogP\001b\006proto3"
+      "\"\000\022A\n\nUpdateBlog\022\027.blog.UpdateBlogReques" +
+      "t\032\030.blog.UpdateBlogResponse\"\000\022A\n\nDeleteB" +
+      "log\022\027.blog.DeleteBlogRequest\032\030.blog.Dele" +
+      "teBlogResponse\"\000\022P\n\010ListBlog\022\025.blog.List" +
+      "BlogRequest\032\026.blog.ListBlogResponse\"\023\202\323\344" +
+      "\223\002\r\022\013/blog/blogs0\001B\022\n\016com.proto.blogP\001b\006" +
+      "proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
